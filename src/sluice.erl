@@ -1,14 +1,17 @@
 -module(sluice).
 
 %% API
--export([start/0, stop/0]).
+-export([start/0, stop/0, add_source/1]).
 
 start() ->
     ensure_started(sasl),
-    application:start(warlock).
+    ok = application:start(sluice).
 
 stop() ->
-    application:stop(warlock).
+    ok = application:stop(sluice).
+
+add_source(_Server) ->
+    ok.
 
 %% internal functions
 
