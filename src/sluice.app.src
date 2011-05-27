@@ -1,0 +1,9 @@
+%% -*- mode: erlang -*-
+
+{application, sluice,
+ [{description, "Polling daemon to move Sift metrics into Graphite"},
+  {vsn, git},
+  {id, "sluice"},
+  {mod, {sluice_app, []}},
+  {applications, [kernel, stdlib, sasl]},
+  {registered, [sluice_sup]}]}.
