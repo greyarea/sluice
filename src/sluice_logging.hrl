@@ -1,0 +1,4 @@
+-define(INFO(Msg), error_logger:info_msg("[~p:~p] ~s~n", [?MODULE, self(), Msg])).
+-define(INFO(Format, Args), error_logger:info_msg("[~p:~p] " ++ Format ++ "~n", [?MODULE, self() | Args])).
+-define(ERROR(Msg), error_logger:error_msg("[~p:~p] ~s~n", [?MODULE, self(), Msg])).
+-define(ERROR(Format, Args), error_logger:error_msg("[~p:~p] " ++ Format ++ "~n", [?MODULE, self() | Args])).

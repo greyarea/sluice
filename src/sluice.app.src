@@ -5,5 +5,5 @@
   {vsn, git},
   {id, "sluice"},
   {mod, {sluice_app, []}},
-  {applications, [kernel, stdlib, sasl]},
+  {applications, [kernel, stdlib, sasl, inets]},
   {registered, [sluice_sup]}]}.

@@ -7,7 +7,7 @@ depends:
 	rebar update-deps
 
 compile:
-	rebar compile skip_deps=true app=sluice
+	rebar compile
 
 run:
 	erl -pz deps/*/ebin ebin \
