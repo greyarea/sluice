@@ -18,5 +18,6 @@ run:
 daemon:
 	erl -pz deps/*/ebin ebin \
 		-config priv/sys \
+		-detached -noinput \
 		-boot start_sasl \
 		-s sluice
