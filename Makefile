@@ -14,3 +14,9 @@ run:
 		-config priv/sys \
 		-boot start_sasl \
 		-s sluice
+
+daemon:
+	erl -pz deps/*/ebin ebin \
+		-config priv/sys \
+		-boot start_sasl \
+		-s sluice
